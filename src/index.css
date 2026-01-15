@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(./assets/JetBrainsMono-VariableFont_wght.ttf);
+}
+body.dark {
+  --bg: #18171f;
+  --text: #fff;
+  --card: #24232c;
+  --accent: #fff;;
+}
+
+body.light {
+  --bg: #e3e3e3;
+  --text: #18171f;
+  --card: #f2f2f2;
+  --accent: #18171f;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+}
+.box,
+.length {
+  background-color: var(--card);
+}
+.length input{
+  accent-color:  var(--accent);
+}
+.result{
+  background-color: var(--text);
+  color: var(--bg);
+}
